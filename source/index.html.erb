@@ -61,26 +61,31 @@
     <!-- Your cards code -->
   <div class="wrapper-card padded">
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-            <div class="card-category">Popular</div>
-            <div class="card-description">
-              <h2>Some stuff</h2>
-              <p>Very cool stuff, useful and smart</p>
-            </div>
-            <img class="card-user avatar" src="images/seb.jpg">
-            <a class="card-link" href="#" ></a>
+    <div class="row">
+      <% data.flats.each do |owner, flat| %>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background-image: url('<%= image_path flat.picture %>');">
+          <div class="card-category"><%= flat.city %></div>
+          <div class="card-description">
+            <h2><%= flat.name %></h2>
+            <p><%= flat.summary %></p>
           </div>
+          <%= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
+          <%= link_to "#", "flats/#{owner}.html", class: "card-link" %>
         </div>
-        <div class="col-xs-12 col-sm-4">
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+        <!-- <div class="col-xs-12 col-sm-4">
           <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
             <div class="card-category">Popular</div>
             <div class="card-description">
               <h2>Some stuff</h2>
               <p>Very cool stuff, useful and smart</p>
             </div>
-            <img class="card-user avatar" src="images/romain.jpeg">
+            <img class="card-user avatar" src="images/romain.jpg">
             <a class="card-link" href="#" ></a>
           </div>
         </div>
@@ -94,8 +99,8 @@
             <img class="card-user avatar" src="images/anne.jpg">
             <a class="card-link" href="#" ></a>
           </div>
-        </div>
-      </div>
+        </div> -->
+<!--       </div> -->
     </div>
   </div>
 
