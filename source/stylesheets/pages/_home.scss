@@ -1,3 +1,24 @@
+// html {
+//   overflow: hidden;
+// }
+// body {
+//   height: 100vh;
+//   background-color: $blue;
+//   overflow-y: auto;
+//   overflow-x: hidden;
+//   -webkit-overflow-scrolling: touch;
+// }
+
+// .parallax-group {
+//   -webkit-transform-style: preserve-3d;
+//   transform-style: preserve-3d;
+// }
+// .banner {
+//   -webkit-transform: translateZ(-1px);
+//   transform: translateZ(-1px);
+// }
+
 body {
-  background-color: $blue;
+  background-color: grey;
+  -webkit-overflow-scrolling: touch;
 }
