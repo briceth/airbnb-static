@@ -1,0 +1,12 @@
+geo_tracking:
+  title: Geo tracking
+  description: Never lose your stuffs again
+  image: lock.png
+weight:
+  title: Weighing
+  description: weigh anywhere at anytime
+  image: weight.png
+Remote_opening:
+  title: Remote opening
+  description: never use your key again
+  image: tracking.png

@@ -19,24 +19,19 @@
     <div class="container">
       <div class="row">
         <div class="text-center">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="features">
-              <h3>Géo-localisation</h3>
-              <img src="images/.png" alt="" width="100">
+          <% data.features.each do |i, feature| %>
+            <div class="col-xs-9 col-sm-9 col-md-6">
+              <div class="features">
+                <h2><%= feature.title %></h2>
+                <p><%= feature.description %></p>
+              </div>
             </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="features">
-              <h3>Poids du bagage</h3>
-              <img src="images/.png" alt="" width="100">
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <div class="features">
-              <h3>Ouverture à distance</h3>
-              <img src="images/.png" alt="" width="100">
-            </div>
-          </div>
+             <div class="col-xs-9 col-sm-3 col-md-6">
+               <div class="">
+                  <%= image_tag feature.image %>
+                </div>
+             </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -45,13 +40,13 @@
   <div class="wrapper-card padded">
     <div class="container">
       <div class="row">
-        <% data.flats.each do |owner, flat| %>
+        <% data.ceo.each do |owner, ceo| %>
         <div class="col-xs-12 col-sm-6">
           <div class="card" style="background-image: url('<%#= image_path flat.picture %>');">
             <div class="card-category"><%#= flat.city %></div>
             <div class="card-description">
-              <h2><%= flat.owner_name %></h2>
-              <p><%= flat.summary %></p>
+              <h2><%= ceo.owner_name %></h2>
+              <p><%= ceo.summary %></p>
             </div>
             <%#= image_tag flat.owner_picture, class:"card-user avatar avatar-large" %>
             <%#= link_to "#", "flats/#{owner}.html", class: "card-link" %>
@@ -70,28 +65,4 @@
       </form>
     </div>
   </div>
-
-  <!-- Your map code -->
-  <!-- <div id="map" style="width: 100%; height: 550px;"></div>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script> -->
-<!--   <script type="text/javascript">
-    var myLatlng = new google.maps.LatLng(48.852937,2.364178);
-
-    var myOptions = {
-      zoom: 16,
-      center: myLatlng,
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [[{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]] // TODO: replace [] by array from https://snazzymaps.com/
-    };
-
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: "You are here!"
-    });
-  </script> -->
-
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
 </body>
