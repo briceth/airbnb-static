@@ -11,14 +11,14 @@ $grey: #4C4C4C;
 }
 .features h2:hover {
   border: 6px solid $grey;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 .btn-submit {
   background-color: transparent;
   color: white;
   border: 3px solid white;
   padding: 15px 45px;
-  border-radius: 30px;
+  border-radius: 5px;
   font-weight: bolder;
 }
 .btn-submit:hover {
