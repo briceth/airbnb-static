@@ -1,8 +1,16 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .banner {
   position: relative;
+  border-radius: 2px;
   color: white;
   text-align: center;
-  min-height: 100vh;
+  min-height: 50vh;
   background-size: cover !important;
   display: flex;
   align-items: center;

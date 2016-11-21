@@ -1,14 +1,16 @@
 <body> <!-- banner code -->
   <div class="header">
-    <div class="banner" style="background-image: linear-gradient(-225deg, rgba(235, 247, 253, 0.6) 0%, rgba(0,36,61,0.3) 50%), url(<%= image_path 'airport.jpg' %>);">
-      <div class="banner-content">
-        <h1 class="animated fadeInDown">Chen</h1>
-        <p class="animated fadeInDown">Discover the world safely</p>
-      <div class="wrapper-checkin padded">
-          <div class="text-center btn">
-            <form action="" class="form-inline" class="btn-submit">
-              <p class="animated fadeInUp"><input type="submit" value="pre-order" class="btn-submit"></p>
-            </form>
+    <div class="container">
+      <div class="banner" style="background-image: linear-gradient(-225deg, rgba(235, 247, 253, 0.6) 0%, rgba(0,36,61,0.3) 50%), url(<%= image_path 'airport.jpg' %>);">
+        <div class="banner-content">
+          <h1 class="animated fadeInDown">Chen</h1>
+          <p class="animated fadeInDown">Discover the world safely</p>
+        <div class="wrapper-checkin padded">
+            <div class="text-center btn">
+              <form action="" class="form-inline" class="btn-submit">
+                <p class="animated fadeInUp"><input type="submit" value="pre-order" class="btn-submit"></p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -16,20 +18,23 @@
   </div>
     <!-- Your features code -->
   <div class="wrapper-features padded">
-    <div class="container">
+    <div class="container feature-container">
       <div class="row">
         <% data.features.each do |index, feature| %>
           <div class="features" id="<%#= index %>">
-            <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="col-xs-12 col-sm-6 col-md-8">
               <div class="features-comments">
-                <h2><%= feature.title %></h2>
-                <p><%= feature.description %></p>
-                <%= image_tag feature.png, width: "300px" %>
-                <%= image_tag 'plus-chen.png', width: "90px" %>
+                <h2 id="title"><%= feature.title %></h2>
+                <p id="paragraphe"><%= feature.description %></p>
+                <%= image_tag feature.png, width: "300px", id: "png" %>
+                <%#= image_tag 'plus-chen.png', width: "90px" %>
+                <%#= image_tag feature.logo, width: "190px" %>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-6">
-              <%= image_tag feature.image, width: "800px" %>
+            <div class="feature-image">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <%= image_tag feature.image, width: "700", id: "image" %>
+              </div>
             </div>
           </div>
         <% end %>
@@ -37,12 +42,20 @@
     </div>
   </div>
   <!-- parallax effect -->
-  <div class="bcg-parallax">
-    <div class="content-wrapper">
-      <p>Chen is a company aiming to develop connected objects in order to serve a target expressing a need.</p>
-      <p>We’re working on an innovative luggage accessory to travel smartly together.</p>
-    </div>
+  <!-- <div class="bcg-parallax">
+    <div class="bcg" style="background-image: url(<%#= image_path 'lock-eclate.jpg' %>)"></div>
+      <div class="content-wrapper">
+        <p>Chen is a company aiming to develop connected objects in order to serve a target expressing a need.</p>
+        <p>We’re working on an innovative luggage accessory to travel smartly together.</p>
+      </div>
+  </div> -->
+
+  <div class="bcg" style="background-image:url(<%#= image_path 'lock-eclate2.jpg' %>);">
+  <div class="bcg-content">
+    <p>Chen is a company aiming to develop connected objects in order to serve a target expressing a need.</p>
+    <p>We’re working on an innovative luggage accessory to travel smartly together.</p>
   </div>
+</div>
     <!-- Your cards code -->
   <div class="wrapper-card padded">
     <div class="container">

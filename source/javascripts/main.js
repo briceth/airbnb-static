@@ -13,7 +13,7 @@ $(document).ready(function(){
     triggerElement: '.bcg-parallax',
     triggerHook: 1
   })
-  .setTween(TweenMax.from('.bcg', 0.3, {y: '-50%', ease:Power0.easeNone}, 0.3))
+  .setTween(TweenMax.from('.bcg', 0.3, {x: '-50%', ease:Power0.easeNone}, 0.3))
   .addTo(controller);
 
   // build a scene
@@ -22,5 +22,6 @@ $(document).ready(function(){
   })
   .setClassToggle('.features', 'fade-in') // add class to feature
   .addTo(controller);
+
 
 });

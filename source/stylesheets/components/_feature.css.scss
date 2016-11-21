@@ -1,15 +1,18 @@
 .wrapper-features {
 }
+.feature-container {
+  position: relative;
+}
 .features {
   font-size: 25px;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease-out;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: space-around;
 }
 .features.fade-in {
   opacity: 1;
@@ -21,7 +24,16 @@
   color: $grey;
 }
 .features-comments {
+  padding-left: 2em;
+  // flex: 0 1 70%;
+}
+.feature-image {
+  position: absolute;
+  top: 100px;
+  right: 0px;
   padding-left: 5em;
+  // flex: 0 1 30%;
+  width: 50%;
 }
 .btn-submit {
   background-color: transparent;
