@@ -22,13 +22,17 @@
       <div class="row">
         <% data.features.each do |index, feature| %>
           <div class="features" id="<%#= index %>">
-            <div class="col-xs-12 col-sm-6 col-md-8">
-              <div class="features-comments">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="features-icone">
                 <h2 id="title"><%= feature.title %></h2>
-                <p id="paragraphe"><%= feature.description %></p>
                 <%= image_tag feature.png, width: "300px", id: "png" %>
-                <%#= image_tag 'plus-chen.png', width: "90px" %>
-                <%#= image_tag feature.logo, width: "190px" %>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="features-comments">
+                <p id="paragraphe"><%= feature.sentence_1 %></p>
+                <p id="paragraphe"><%= feature.sentence_1 %></p>
+                <p id="paragraphe"><%= feature.sentence_1 %></p>
               </div>
             </div>
             <div class="feature-image">

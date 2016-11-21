@@ -1,18 +1,18 @@
 geo_tracking:
   title: Geo tracking
-  description: Never lose your stuffs again
+  sentence_1: Never lose your stuffs again
   image: iphone1.png
   png: lock-black.png
   logo: tracking.png
 weight:
   title: Weighing
-  description: weigh anywhere at anytime
+  sentence_1: weigh your case anywhere at anytime
   image: iphone2.png
   png: lock-white.png
   logo: weight.png
 Remote_opening:
   title: Remote opening
-  description: never use your key again
+  sentence_1: never use your key again
   image: iphone3.png
   png: lock-red.png
   logo: lock.png
