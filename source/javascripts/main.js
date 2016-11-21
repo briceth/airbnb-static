@@ -11,16 +11,14 @@ $(document).ready(function(){
 
   var slideParallaxScene = new ScrollMagic.Scene({
     triggerElement: '.bcg-parallax',
-    triggerHook: 1,
-    duration: '100%'
+    triggerHook: 1
   })
   .setTween(TweenMax.from('.bcg', 0.3, {y: '-50%', ease:Power0.easeNone}, 0.3))
   .addTo(controller);
 
   // build a scene
   var ourScene = new ScrollMagic.Scene({
-    triggerElement: '.features',
-    duration: '100%'
+    triggerElement: '.features'
   })
   .setClassToggle('.features', 'fade-in') // add class to feature
   .addTo(controller);
