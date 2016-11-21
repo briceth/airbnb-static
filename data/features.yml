@@ -2,11 +2,14 @@ geo_tracking:
   title: Geo tracking
   description: Never lose your stuffs again
   image: iphone1.png
+  png: lock-black.png
 weight:
   title: Weighing
   description: weigh anywhere at anytime
   image: iphone2.png
+  png: lock-white.png
 Remote_opening:
   title: Remote opening
   description: never use your key again
   image: iphone3.png
+  png: lock-brun.png
