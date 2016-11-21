@@ -3,8 +3,10 @@
  * ------------------------------------- */
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+$base-font: "Lora", "sans-serif";
+$header-font: "Lora", "sans-serif";
 
 // Local fonts (uncomment following lines)
 // @font-face {
