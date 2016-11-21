@@ -1,0 +1,14 @@
+<div class="wrapper-story">
+  <div class="row">
+    <div class="container">
+       <ul class="list-inline text-center">
+        <% ["alban", "vladimir"].each do |member| %>
+          <li>
+            <%= image_tag "#{member}.jpg", width: "200px" %>
+            <h3><%= member.capitalize %></h3>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

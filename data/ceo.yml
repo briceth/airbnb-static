@@ -1,10 +1,8 @@
 Alban:
   owner_name: Alban de Lanouvelle
-  picture: alban_picture.jpg
-  owner_picture: seb.jpg
+  picture: alban.jpg
   summary: CEO, co-founder
 Vladimir:
   owner_name: Vladimir Bricout
   picture: vladimir.jpg
-  owner_picture: romain.jpg
   summary: CTO, co-founder

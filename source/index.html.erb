@@ -18,28 +18,29 @@
   <div class="wrapper-features padded">
     <div class="container">
       <div class="row">
-        <div class="text-center">
-          <% data.features.each do |index, feature| %>
-            <div class="col-xs-12 col-sm-9 col-md-7">
-              <div class="features" id="<%= index %>">
+        <% data.features.each do |index, feature| %>
+          <div class="features" id="<%#= index %>">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <div class="features-comments">
                 <h2><%= feature.title %></h2>
                 <p><%= feature.description %></p>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-3 col-md-5">
-              <%= image_tag feature.image, width: "100px" %>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+              <%= image_tag feature.image, width: "800px" %>
             </div>
-          <% end %>
-        </div>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
+
   <!-- parallax effect -->
   <div class="bcg-parallax">
-    <div class="bcg"></div>
+    <div class="bcg" style="background-image: url('');"></div>
     <div class="content-wrapper">
-      <h1>section whith parallax effect</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis. Nisi, eligendi ab id. Soluta.</p>
+      <p>Chen is a company aiming to develop connected objects in order to serve a target expressing a need.</p>
+      <p>We’re working on an innovative luggage accessory to travel smartly together.</p>
     </div>
   </div>
     <!-- Your cards code -->
