@@ -46,16 +46,17 @@
     </div>
   </div>
   <!-- parallax effect -->
-
-  <div class="banner-parallax" style="background-image:url(<%= image_path 'train.jpg' %>);">
-    <div class="bcg-content">
-      <p>Chen is a company aiming to develop connected objects in order to serve a target expressing a need.</p>
-      <p>We’re working on an innovative luggage accessory to travel smartly together.</p>
+  <div class="container-parallax">
+    <div class="banner-parallax" style="background-image:url(<%= image_path 'train.jpg' %>);">
+      <div class="bcg-content">
+        <p>Chen is a company aiming to develop connected objects in order to serve a target expressing a need.</p>
+        <p>We’re working on an innovative luggage accessory to travel smartly together.</p>
+      </div>
     </div>
   </div>
     <!-- Your cards code -->
   <div class="wrapper-card padded">
-    <div class="container">
+    <div class="container-card">
       <div class="row">
         <% data.ceo.each do |owner, ceo| %>
         <div class="col-xs-12 col-sm-6 md-6">

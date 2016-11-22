@@ -1,3 +1,10 @@
+.container-parallax {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 75px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .bcg-parallax {
   padding: 100px 0;
   color: #fff;
@@ -20,15 +27,18 @@
   text-align: center;
   opacity: 0.9;
   height: 30vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  border-radius: 2px;
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner-parallax p {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: lighter;
   margin-bottom: 20px;
   text-shadow: 0px 2px rgba(0, 0, 0, 0.3);
