@@ -1,0 +1,13 @@
+.btn-submit {
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  padding: 15px 45px;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.btn-submit:hover {
+  text-decoration: none;
+  border: 3px solid $grey;
+  transition: all 0.6s ease;
+}

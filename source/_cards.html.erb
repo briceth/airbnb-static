@@ -1,0 +1,17 @@
+<!-- Your cards code -->
+  <div class="wrapper-card padded">
+    <div class="container-card">
+      <div class="row">
+        <% data.ceo.each do |owner, ceo| %>
+        <div class="col-xs-12 col-sm-6 md-6">
+          <div class="card" style="background-image: url('<%= image_path ceo.picture %>');">
+            <div class="card-description">
+              <h2><%= ceo.owner_name %></h2>
+              <p><%= ceo.summary %></p>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>

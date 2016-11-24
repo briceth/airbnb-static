@@ -16,35 +16,10 @@
       </div>
     </div>
   </div>
-    <!-- Your features code -->
-  <div class="wrapper-features padded">
-    <div class="container feature-container">
-      <div class="row">
-        <% data.features.each do |index, feature| %>
-          <div class="features" id="<%#= index %>">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="features-icone">
-                <h2 id="title"><%= feature.title %></h2>
-                <%= image_tag feature.png, width: "300px", id: "png" %>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <div class="features-comments">
-                <p id="paragraphe"><%= feature.sentence_1 %></p>
-                <p id="paragraphe"><%= feature.sentence_1 %></p>
-                <p id="paragraphe"><%= feature.sentence_1 %></p>
-              </div>
-            </div>
-            <div class="feature-image">
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <%= image_tag feature.image, width: "550", id: "image" %>
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
-  </div>
+
+      <%= partial "features" %>
+
+
   <!-- parallax effect -->
   <div class="container-parallax">
     <div class="banner-parallax" style="background-image:url(<%= image_path 'train.jpg' %>);">
@@ -54,22 +29,11 @@
       </div>
     </div>
   </div>
-    <!-- Your cards code -->
-  <div class="wrapper-card padded">
-    <div class="container-card">
-      <div class="row">
-        <% data.ceo.each do |owner, ceo| %>
-        <div class="col-xs-12 col-sm-6 md-6">
-          <div class="card" style="background-image: url('<%= image_path ceo.picture %>');">
-            <div class="card-description">
-              <h2><%= ceo.owner_name %></h2>
-              <p><%= ceo.summary %></p>
-            </div>
-          </div>
-        </div>
-        <% end %>
-      </div>
-    </div>
+
+      <%= partial "cards" %>
+
+  <div class="container-line">
+    <div id="line"></div>
   </div>
   <div class="wrapper-form padded">
     <div class="text-center">
